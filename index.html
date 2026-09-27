@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Matrail</title>
+        <link rel="icon" href="Logo.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="home">
+        <header>
+                <nav id="navCart" class="navbar">
+                        <div class="logo">
+                                <img src="Logo.png" alt="logo">
+                        </div>
+                        <div class="right">
+                                <ul>
+                                        <li><span><a href="#home">Home</a></span></li>
+                                        <li><span><a href="#products">Products</a></span></li>
+                                        <li><span class="cartnav">Cart</span></li>
+                                        <li><span class="accountnav">Account</span></li>
+                                        <li><span><a href="#about">About</a></span></li>
+                                        <li><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                                fill="none" viewBox="0 0 24 24">
+                                                                <path stroke="currentColor" stroke-linecap="round"
+                                                                        stroke-linejoin="round" stroke-width="2"
+                                                                        d="m13 19 3.5-9 3.5 9m-6.125-2h5.25M3 7h7m0 0h2m-2 0c0 1.63-.793 3.926-2.239 5.655M7.5 6.818V5m.261 7.655C6.79 13.82 5.521 14.725 4 15m3.761-2.345L5 10m2.761 2.655L10.2 15" />
+                                                        </svg>
+                                                        <select class="select">
+                                                                <option value="eng">English</option>
+                                                                <option value="urdu">اردو</option>
+                                                        </select>
+                                                </span>
+                                        </li>
+                                </ul>
+                </nav>
+        </header>
+        <main>
+                <section class="first">
+                        <div class="hero">
+                                <div class="spans">
+                                        <span>
+                                                <h2>Fast • Modern • Next-Level Shopping</h2>
+                                        </span>
+                                        <span>
+                                                <p>Discover quality products at the best prices</p>
+                                        </span>
+                                </div>
+
+                                <div id="products" class="search">
+                                        <input type="text" id="search-input" placeholder="">
+                                        <button id="search-btn" class="btn">Search</button>
+                                </div>
+
+                        </div>
+
+                </section>
+
+                <section class="second">
+                        <div class="filter-container">
+                                <div class="filter">
+                                        <label for="category">Category:</label>
+                                        <select class="select" id="category-filter">
+                                                <option value="all">All Categories</option>
+                                                <option value="clothes">Clothes</option>
+                                                <option value="accessories">Accessories</option>
+                                                <option value="shoes">Shoes</option>
+                                                <option value="gadgets">Gadgets</option>
+                                        </select>
+                                </div>
+
+                                <div class="filter" >
+                                        <label for="price">Price:</label>
+                                        <select class="select" id="price-filter">
+                                                <option value="default">Default</option>
+                                                <option value="low-to-high">Low to High</option>
+                                                <option value="high-to-low">High to Low</option>
+                                        </select>
+                                </div>
+                        </div>
+                </section>
+
+
+                <section class="third">
+                        <div id="productsList" class="grid">
+                        </div>
+                </section>
+        </main>
+
+        <footer id="about">
+
+        </footer>
+
+
+        <div class="CartModelBox hidden">
+                <div class="CartModelCard">
+                        <button class="CartCloseBtn">X</button>
+                        <div class="CartModelContent">
+
+                        </div>
+                </div>
+        </div>
+
+        <div class="AccountModelBox hidden">
+                <div class="AccountModelCard">
+                        <button class="AccountCloseBtn">X</button>
+                        <div class="AccountModelContent">
+
+                        </div>
+                </div>
+        </div>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

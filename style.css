@@ -1,0 +1,368 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    width: 87px;
+    margin-top: 10px;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul {
+    display: flex;
+    gap: 30px;
+}
+
+.right ul li span {
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.right ul li span a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.right span:hover {
+    color: #076a9c96;
+}
+
+.navbar {
+    background-color: aqua;
+    color: white;
+    border: none;
+    padding: 7px 13px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background 0.2s ease;
+}
+
+.navbar .select {
+    background-color: #66c3d3bd;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.navbar .select:hover {
+    background-color: #076a9c83;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin: 60px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    position: relative;
+    top: -23px;
+}
+
+.search {
+    display: flex;
+    gap: 12px;
+    width: 103%;
+    max-width: 396px;
+}
+
+.first .search input {
+    flex: 1;
+    padding: 8px 12px;
+    background-color: #2495cdc0;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    outline: none;
+}
+
+.first .search .btn {
+    background-color: #2495cdc0;
+    padding: 2px 14px;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.search .btn:hover {
+    background-color: #076a9c;
+}
+
+
+.hero .spans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.hero .spans h2 {
+    font-size: 30px;
+    color: #e8730d;
+    margin-bottom: 6px;
+}
+
+/* .hero .spans h2 img {
+    width: 50px;
+
+} */
+
+.hero .spans p {
+    font-size: 21px;
+    color: #5b6472;
+}
+
+.second {
+    max-width: 1100px;
+    margin: -59px auto 10px auto;
+}
+
+.filter-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter label {
+    font-size: 16px;
+    color: #5b6472;
+}
+
+.filter .select {
+    background-color: #2495cdc0;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.second .filter select:hover {
+    background-color: #076a9c;
+}
+
+.third {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 90vw;
+    gap: 70px;
+    margin-top: 48px;
+}
+
+.grid .product-name {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.item {
+    /* width: 150px; */
+    /* height: 100%; */
+    padding: 10px;
+    background-color: #2495cdc0;
+    border-radius: 12px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.item img {
+    height: 67%;
+}
+
+.Price {
+    font-weight: 600;
+    padding: 4px;
+    color: white;
+}
+
+.third .grid .tag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third .btn {
+    background-color: #1b729e9c;
+    padding: 10px 8px;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-size: 12px;
+    width: 100px;
+}
+
+.third .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.third .btn:hover {
+    background-color: #076a9c;
+}
+
+
+
+@media screen and (max-width:1145) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+footer {
+    min-height: 400px;
+    background-color: #22222276;
+    margin-top: 40px;
+}
+
+.CartModelBox {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.429);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+}
+
+.CartModelCard {
+    width: 90%;
+    height: 40%;
+    max-width: 50%;
+    max-height: 50%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CartCloseBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgba(255, 0, 0, 0.689);
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.CartCloseBtn:hover {
+    color: red;
+}
+
+
+.AccountModelBox {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.429);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+}
+
+.AccountModelCard {
+    width: 90%;
+    height: 40%;
+    max-width: 50%;
+    max-height: 50%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AccountCloseBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgba(255, 0, 0, 0.689);
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.AccountCloseBtn:hover {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.AccountModelCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

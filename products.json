@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Casual Cotton T-Shirt",
+    "price": 1499,
+    "category": "clothes",
+    "image": "Logo.png"
+  },
+  {
+    "id": 2,
+    "name": "Classic Denim Jacket",
+    "price": 4299,
+    "category": "clothes",
+    "image": "Logo.png"
+  },
+  {
+    "id": 3,
+    "name": "Wireless Headphones",
+    "price": 5999,
+    "category": "gadgets",
+    "image": "Logo.png"
+  },
+  {
+    "id": 4,
+    "name": "Smart Fitness Watch",
+    "price": 3499,
+    "category": "gadgets",
+    "image": "Logo.png"
+  },
+  {
+    "id": 5,
+    "name": "Urban Running Sneakers",
+    "price": 4999,
+    "category": "shoes",
+    "image": "Logo.png"
+  },
+  {
+    "id": 6,
+    "name": "Leather Minimalist Wallet",
+    "price": 1299,
+    "category": "accessories",
+    "image": "Logo.png"
+  },
+  {
+    "id": 7,
+    "name": "Aviator Sunglasses",
+    "price": 1899,
+    "category": "accessories",
+    "image": "Logo.png"
+  },
+  {
+    "id": 8,
+    "name": "Classic Canvas Low-Tops",
+    "price": 2799,
+    "category": "shoes",
+    "image": "Logo.png"
+  }
+]
